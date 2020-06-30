@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vpt-Mc-wsk">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="home" id="BYZ-38-t0r" customClass="ViewController" customModule="NasaPostCardApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Geely_Sat" translatesAutoresizingMaskIntoConstraints="NO" id="4RD-1Y-Ljy">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ZMr-a5-LMD">
+                                <rect key="frame" x="41" y="637" width="137" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Mars Rover Postcard Creator "/>
+                                <connections>
+                                    <segue destination="nUp-4Z-gJf" kind="show" identifier="postCard" id="0Jv-z3-MQQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ccM-Ak-KIJ">
+                                <rect key="frame" x="246" y="637" width="137" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Location sattelite view"/>
+                                <connections>
+                                    <segue destination="iMk-fm-5Wq" kind="show" id="590-B6-kMG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="4RD-1Y-Ljy" secondAttribute="trailing" id="Dh6-uu-qXR"/>
+                            <constraint firstItem="4RD-1Y-Ljy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="F2o-oB-BIV"/>
+                            <constraint firstItem="4RD-1Y-Ljy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Nsp-U7-djW"/>
+                            <constraint firstItem="4RD-1Y-Ljy" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="Tlx-rf-pSe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="UAo-Hf-mY6"/>
+                    <connections>
+                        <outlet property="LocationView" destination="ccM-Ak-KIJ" id="PfI-9v-0wd"/>
+                        <outlet property="backGroundImage" destination="4RD-1Y-Ljy" id="5Kg-uS-QTg"/>
+                        <outlet property="postCardButton" destination="ZMr-a5-LMD" id="t7H-Dh-gTd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924.63768115942037" y="17.410714285714285"/>
+        </scene>
+        <!--Postcard selection -->
+        <scene sceneID="RHB-b3-UBK">
+            <objects>
+                <collectionViewController storyboardIdentifier="postcard" id="nUp-4Z-gJf" customClass="PostcardCreatorCollectionViewController" customModule="NasaPostCardApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="t8F-Ca-fg7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hfq-DE-1dd">
+                            <size key="itemSize" width="182" height="196"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="U78-hn-Cga" customClass="PostcardCollectionViewCell" customModule="NasaPostCardApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="182" height="196"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="182" height="196"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RfI-f8-TKr">
+                                            <rect key="frame" x="0.0" y="0.0" width="229" height="224"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="RfI-f8-TKr" firstAttribute="top" secondItem="U78-hn-Cga" secondAttribute="top" id="1eg-ir-H4J"/>
+                                    <constraint firstItem="RfI-f8-TKr" firstAttribute="top" secondItem="U78-hn-Cga" secondAttribute="top" id="23t-M7-tJm"/>
+                                    <constraint firstAttribute="trailing" secondItem="RfI-f8-TKr" secondAttribute="trailing" id="585-bB-93J"/>
+                                    <constraint firstAttribute="trailing" secondItem="RfI-f8-TKr" secondAttribute="trailing" id="LK0-rh-dMn"/>
+                                    <constraint firstItem="RfI-f8-TKr" firstAttribute="leading" secondItem="U78-hn-Cga" secondAttribute="leading" id="NHG-UQ-kxD"/>
+                                    <constraint firstItem="RfI-f8-TKr" firstAttribute="leading" secondItem="U78-hn-Cga" secondAttribute="leading" id="nNe-wK-Xoc"/>
+                                    <constraint firstAttribute="bottom" secondItem="RfI-f8-TKr" secondAttribute="bottom" id="wgw-2r-Cyb"/>
+                                    <constraint firstAttribute="bottom" secondItem="RfI-f8-TKr" secondAttribute="bottom" id="zav-l4-6vE"/>
+                                </constraints>
+                                <size key="customSize" width="182" height="196"/>
+                                <connections>
+                                    <outlet property="imageView" destination="RfI-f8-TKr" id="hM8-lr-MWQ"/>
+                                    <segue destination="AiR-Hk-UOO" kind="show" identifier="showDetail" id="rNP-Uu-OAT"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="nUp-4Z-gJf" id="Sn4-HZ-piD"/>
+                            <outlet property="delegate" destination="nUp-4Z-gJf" id="IlR-lh-VzU"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Postcard selection " id="Ki7-rd-MF4"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2PD-gX-PB7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1844.9275362318842" y="260.49107142857144"/>
+        </scene>
+        <!--Postcard Creator -->
+        <scene sceneID="yhp-Bi-Y9M">
+            <objects>
+                <viewController storyboardIdentifier="postcardDetail" id="AiR-Hk-UOO" customClass="PostCodeDetialViewController" customModule="NasaPostCardApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a4U-uI-n2M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CvX-l3-UA3">
+                                <rect key="frame" x="67.5" y="772" width="279" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSd-FF-gts">
+                                        <rect key="frame" x="0.0" y="0.0" width="141" height="30"/>
+                                        <state key="normal" title="Send Postcard Email"/>
+                                        <connections>
+                                            <action selector="genEmail:" destination="AiR-Hk-UOO" eventType="touchUpInside" id="psB-IM-mdB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkm-o1-YvC">
+                                        <rect key="frame" x="151" y="0.0" width="128" height="30"/>
+                                        <state key="normal" title="Generate Postcard"/>
+                                        <connections>
+                                            <action selector="generatePostcardButtonPressed:" destination="AiR-Hk-UOO" eventType="touchUpInside" id="MJp-yF-Vwt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6i0-FF-tBs">
+                                <rect key="frame" x="0.0" y="88" width="414" height="238"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="238" id="QL4-yp-h9U"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="dYi-9O-Yzj">
+                                <rect key="frame" x="0.0" y="422" width="414" height="222"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="To..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BWl-rA-7OY">
+                                        <rect key="frame" x="10" y="0.0" width="394" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="LwG-Zw-uP8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="From .." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Chy-G1-G1j">
+                                        <rect key="frame" x="10" y="49" width="394" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="IO0-Ej-AZz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Post card message " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tqL-ok-uvI">
+                                        <rect key="frame" x="10" y="98" width="394" height="124"/>
+                                        <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="124" id="FhM-aq-CaD"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tqL-ok-uvI" secondAttribute="trailing" constant="10" id="1eS-h6-3nP"/>
+                                    <constraint firstAttribute="trailing" secondItem="BWl-rA-7OY" secondAttribute="trailing" constant="10" id="Lfr-xS-msx"/>
+                                    <constraint firstAttribute="trailing" secondItem="Chy-G1-G1j" secondAttribute="trailing" constant="10" id="VSe-Wv-maH"/>
+                                    <constraint firstItem="tqL-ok-uvI" firstAttribute="leading" secondItem="dYi-9O-Yzj" secondAttribute="leading" constant="10" id="a90-QQ-I1o"/>
+                                    <constraint firstAttribute="height" constant="222" id="ekF-7X-O5M"/>
+                                    <constraint firstItem="Chy-G1-G1j" firstAttribute="leading" secondItem="dYi-9O-Yzj" secondAttribute="leading" constant="10" id="oHF-E4-W8K"/>
+                                    <constraint firstItem="BWl-rA-7OY" firstAttribute="leading" secondItem="dYi-9O-Yzj" secondAttribute="leading" constant="10" id="xGo-ZP-qVh"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dYi-9O-Yzj" firstAttribute="leading" secondItem="EnA-u6-at1" secondAttribute="leading" id="86t-Wt-jI7"/>
+                            <constraint firstItem="6i0-FF-tBs" firstAttribute="trailing" secondItem="EnA-u6-at1" secondAttribute="trailing" id="GUP-zg-vYN"/>
+                            <constraint firstItem="6i0-FF-tBs" firstAttribute="leading" secondItem="EnA-u6-at1" secondAttribute="leading" id="Kqp-Ch-fxG"/>
+                            <constraint firstItem="EnA-u6-at1" firstAttribute="bottom" secondItem="CvX-l3-UA3" secondAttribute="bottom" constant="60" id="NWl-dE-Egt"/>
+                            <constraint firstItem="6i0-FF-tBs" firstAttribute="top" secondItem="EnA-u6-at1" secondAttribute="top" id="SN0-WP-Qzx"/>
+                            <constraint firstItem="dYi-9O-Yzj" firstAttribute="top" secondItem="6i0-FF-tBs" secondAttribute="bottom" constant="96" id="Y3A-5Z-TDS"/>
+                            <constraint firstItem="CvX-l3-UA3" firstAttribute="centerX" secondItem="a4U-uI-n2M" secondAttribute="centerX" id="eRV-qM-rpp"/>
+                            <constraint firstItem="EnA-u6-at1" firstAttribute="trailing" secondItem="dYi-9O-Yzj" secondAttribute="trailing" id="qhP-84-jKC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EnA-u6-at1"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Postcard Creator " id="oR1-UD-tGd"/>
+                    <connections>
+                        <outlet property="displayPicture" destination="6i0-FF-tBs" id="hXG-3I-MS0"/>
+                        <outlet property="fromMessage" destination="Chy-G1-G1j" id="Y20-85-CJw"/>
+                        <outlet property="sendEmailButton" destination="GSd-FF-gts" id="VB6-3u-sfK"/>
+                        <outlet property="sendPostCardButton" destination="GSd-FF-gts" id="UeS-cR-Lv1"/>
+                        <outlet property="textMessage" destination="tqL-ok-uvI" id="Irq-px-v2R"/>
+                        <outlet property="toMessage" destination="BWl-rA-7OY" id="bYS-sq-a3p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pYd-TA-779" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2907" y="192"/>
+        </scene>
+        <!--Location Results Controller-->
+        <scene sceneID="R4W-5S-XPl">
+            <objects>
+                <tableViewController storyboardIdentifier="test" id="lrj-vm-ElB" customClass="LocationResultsController" customModule="NasaPostCardApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gqV-Oh-pZD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Qbu-Yz-nJb">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qbu-Yz-nJb" id="a98-2y-382">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="lrj-vm-ElB" id="9PP-ja-s6B"/>
+                            <outlet property="delegate" destination="lrj-vm-ElB" id="eCh-Fe-aM4"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bp0-Qi-iLM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3854" y="260"/>
+        </scene>
+        <!--location selector -->
+        <scene sceneID="fhu-vO-d4x">
+            <objects>
+                <viewController storyboardIdentifier="location" id="iMk-fm-5Wq" customClass="LocationSelectorViewController" customModule="NasaPostCardApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kQG-nT-fTl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Pm1-hm-k1w">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Pm1-hm-k1w" firstAttribute="leading" secondItem="5hQ-FP-nGL" secondAttribute="leading" id="3Ng-Kk-8jw"/>
+                            <constraint firstItem="5hQ-FP-nGL" firstAttribute="bottom" secondItem="Pm1-hm-k1w" secondAttribute="bottom" id="cLo-Lr-sar"/>
+                            <constraint firstItem="Pm1-hm-k1w" firstAttribute="top" secondItem="5hQ-FP-nGL" secondAttribute="top" id="gIh-vi-jAJ"/>
+                            <constraint firstItem="5hQ-FP-nGL" firstAttribute="trailing" secondItem="Pm1-hm-k1w" secondAttribute="trailing" id="nku-us-Xpc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5hQ-FP-nGL"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="location selector " id="pUB-Uv-rJe"/>
+                    <connections>
+                        <outlet property="map" destination="Pm1-hm-k1w" id="E0j-eE-nhj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1h2-A5-1fT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2445" y="-499"/>
+        </scene>
+        <!--Location Satallite Detail View Controller-->
+        <scene sceneID="5LP-BH-8sW">
+            <objects>
+                <viewController storyboardIdentifier="locationDetail" id="2mB-nj-bQ8" customClass="LocationSatalliteDetailViewController" customModule="NasaPostCardApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vMW-q5-6So">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oFH-nr-DRP">
+                                <rect key="frame" x="0.0" y="44" width="414" height="314"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kcX-dz-WjH">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="314"/>
+                                    </imageView>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="ue1-ED-AP8">
+                                        <rect key="frame" x="163" y="118" width="89" height="79"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="kcX-dz-WjH" firstAttribute="centerX" secondItem="ue1-ED-AP8" secondAttribute="centerX" id="0C6-2j-vHr"/>
+                                    <constraint firstAttribute="trailing" secondItem="kcX-dz-WjH" secondAttribute="trailing" id="Ce0-am-oET"/>
+                                    <constraint firstAttribute="height" constant="314" id="FiI-sH-biE"/>
+                                    <constraint firstAttribute="bottom" secondItem="kcX-dz-WjH" secondAttribute="bottom" id="Hg3-X1-xgo"/>
+                                    <constraint firstItem="kcX-dz-WjH" firstAttribute="bottom" secondItem="Xuf-SV-iRg" secondAttribute="bottom" id="HoP-eV-XhR"/>
+                                    <constraint firstItem="kcX-dz-WjH" firstAttribute="centerX" secondItem="oFH-nr-DRP" secondAttribute="centerX" id="ZE0-d0-yAq"/>
+                                    <constraint firstItem="kcX-dz-WjH" firstAttribute="top" secondItem="oFH-nr-DRP" secondAttribute="top" id="eVI-1e-2M0"/>
+                                    <constraint firstItem="kcX-dz-WjH" firstAttribute="centerY" secondItem="ue1-ED-AP8" secondAttribute="centerY" id="wFw-b4-hIp"/>
+                                    <constraint firstItem="kcX-dz-WjH" firstAttribute="leading" secondItem="oFH-nr-DRP" secondAttribute="leading" id="yAa-7E-JDn"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="T3f-cv-gvu"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Xuf-SV-iRg"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the most recent satellite photo of " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAb-Ls-WjS">
+                                <rect key="frame" x="20" y="366" width="374" height="147"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Zog-Q5-fUd" firstAttribute="bottom" secondItem="uAb-Ls-WjS" secondAttribute="bottom" constant="349" id="3H0-hV-8k8"/>
+                            <constraint firstItem="uAb-Ls-WjS" firstAttribute="top" secondItem="oFH-nr-DRP" secondAttribute="bottom" constant="8" id="GFB-qv-wSA"/>
+                            <constraint firstItem="oFH-nr-DRP" firstAttribute="top" secondItem="Zog-Q5-fUd" secondAttribute="top" id="IQy-g0-YAp"/>
+                            <constraint firstItem="oFH-nr-DRP" firstAttribute="trailing" secondItem="Zog-Q5-fUd" secondAttribute="trailing" id="PJC-AA-Adf"/>
+                            <constraint firstItem="Zog-Q5-fUd" firstAttribute="bottom" secondItem="oFH-nr-DRP" secondAttribute="bottom" constant="504" id="dC5-kL-F2t"/>
+                            <constraint firstItem="oFH-nr-DRP" firstAttribute="leading" secondItem="Zog-Q5-fUd" secondAttribute="leading" id="gSF-ZE-S7z"/>
+                            <constraint firstItem="uAb-Ls-WjS" firstAttribute="centerX" secondItem="oFH-nr-DRP" secondAttribute="centerX" id="tMc-y3-eeV"/>
+                            <constraint firstItem="uAb-Ls-WjS" firstAttribute="leading" secondItem="vMW-q5-6So" secondAttribute="leadingMargin" id="wqj-zf-Ofp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zog-Q5-fUd"/>
+                    </view>
+                    <connections>
+                        <outlet property="feedbackLabel" destination="uAb-Ls-WjS" id="gxp-u7-dvZ"/>
+                        <outlet property="imageViewBottomConstraint" destination="Hg3-X1-xgo" id="j38-hb-7US"/>
+                        <outlet property="imageViewLeadingConstraint" destination="yAa-7E-JDn" id="Aa9-VZ-9A2"/>
+                        <outlet property="imageViewTopConstraint" destination="eVI-1e-2M0" id="RrD-Vo-aho"/>
+                        <outlet property="imageViewTrailingConstraint" destination="Ce0-am-oET" id="PGl-TG-l7M"/>
+                        <outlet property="loadingMonitor" destination="ue1-ED-AP8" id="B8c-4w-oFu"/>
+                        <outlet property="satImage" destination="kcX-dz-WjH" id="O2F-kJ-dHK"/>
+                        <outlet property="testScroll" destination="oFH-nr-DRP" id="pJa-XL-zct"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zKD-lI-ggN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3276.811594202899" y="-488.16964285714283"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JRc-eb-b0l">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vpt-Mc-wsk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6bF-ey-U6l">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="oK7-xA-Ull"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a9D-Xd-pLx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.681159420289859" y="28.794642857142854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Geely_Sat" width="1400" height="1400"/>
+    </resources>
+</document>

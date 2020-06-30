@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D96A5AC249BDCDB0051F8C3 /* PostcardCreatorCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D96A5AB249BDCDB0051F8C3 /* PostcardCreatorCollectionViewController.swift */; };
+		5D96A5AE249BDE8C0051F8C3 /* PostCodeDetialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D96A5AD249BDE8C0051F8C3 /* PostCodeDetialViewController.swift */; };
+		5D96A5B2249CB0880051F8C3 /* MarsPhotoJsonDownloder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D96A5B1249CB0880051F8C3 /* MarsPhotoJsonDownloder.swift */; };
+		5D96A5B4249CB92F0051F8C3 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D96A5B3249CB92F0051F8C3 /* Errors.swift */; };
+		5D96A5B6249CBA260051F8C3 /* MarsRoverPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D96A5B5249CBA260051F8C3 /* MarsRoverPhoto.swift */; };
+		5D96A5B8249CC2E10051F8C3 /* PhotoDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D96A5B7249CC2E10051F8C3 /* PhotoDownloader.swift */; };
+		5D96A5BC249D24DC0051F8C3 /* PostcardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D96A5BB249D24DC0051F8C3 /* PostcardCollectionViewCell.swift */; };
+		5DA07F4D249FC9CC00E9A82A /* LocationSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA07F4C249FC9CC00E9A82A /* LocationSelectorViewController.swift */; };
+		5DA07F4F249FCA3E00E9A82A /* LocationSatalliteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA07F4E249FCA3E00E9A82A /* LocationSatalliteDetailViewController.swift */; };
+		5DA07F51249FCE1D00E9A82A /* LocationresultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA07F50249FCE1D00E9A82A /* LocationresultViewController.swift */; };
+		5DA07F55249FD73800E9A82A /* AddressFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA07F54249FD73800E9A82A /* AddressFormatter.swift */; };
+		5DA07F57249FEAD700E9A82A /* LocationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA07F56249FEAD700E9A82A /* LocationAnnotation.swift */; };
+		5DA146AA24A74E5D0046206E /* Animators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA146A924A74E5D0046206E /* Animators.swift */; };
+		5DA146AD24AA56D30046206E /* appExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA146AC24AA56D30046206E /* appExtensions.swift */; };
+		5DCE0C56248B8B590092F841 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCE0C55248B8B590092F841 /* AppDelegate.swift */; };
+		5DCE0C58248B8B590092F841 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCE0C57248B8B590092F841 /* SceneDelegate.swift */; };
+		5DCE0C5A248B8B590092F841 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCE0C59248B8B590092F841 /* ViewController.swift */; };
+		5DCE0C5D248B8B590092F841 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCE0C5B248B8B590092F841 /* Main.storyboard */; };
+		5DCE0C5F248B8B5A0092F841 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DCE0C5E248B8B5A0092F841 /* Assets.xcassets */; };
+		5DCE0C62248B8B5A0092F841 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DCE0C60248B8B5A0092F841 /* LaunchScreen.storyboard */; };
+		5DCE0C6D248B8B5A0092F841 /* NasaPostCardAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCE0C6C248B8B5A0092F841 /* NasaPostCardAppTests.swift */; };
+		5DCE0C78248B8B940092F841 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCE0C77248B8B940092F841 /* Credentials.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5DCE0C69248B8B5A0092F841 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DCE0C4A248B8B580092F841 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DCE0C51248B8B580092F841;
+			remoteInfo = NasaPostCardApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5D96A5AB249BDCDB0051F8C3 /* PostcardCreatorCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostcardCreatorCollectionViewController.swift; sourceTree = "<group>"; };
+		5D96A5AD249BDE8C0051F8C3 /* PostCodeDetialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCodeDetialViewController.swift; sourceTree = "<group>"; };
+		5D96A5B1249CB0880051F8C3 /* MarsPhotoJsonDownloder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsPhotoJsonDownloder.swift; sourceTree = "<group>"; };
+		5D96A5B3249CB92F0051F8C3 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		5D96A5B5249CBA260051F8C3 /* MarsRoverPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsRoverPhoto.swift; sourceTree = "<group>"; };
+		5D96A5B7249CC2E10051F8C3 /* PhotoDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDownloader.swift; sourceTree = "<group>"; };
+		5D96A5BB249D24DC0051F8C3 /* PostcardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostcardCollectionViewCell.swift; sourceTree = "<group>"; };
+		5DA07F4C249FC9CC00E9A82A /* LocationSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectorViewController.swift; sourceTree = "<group>"; };
+		5DA07F4E249FCA3E00E9A82A /* LocationSatalliteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSatalliteDetailViewController.swift; sourceTree = "<group>"; };
+		5DA07F50249FCE1D00E9A82A /* LocationresultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationresultViewController.swift; sourceTree = "<group>"; };
+		5DA07F54249FD73800E9A82A /* AddressFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressFormatter.swift; sourceTree = "<group>"; };
+		5DA07F56249FEAD700E9A82A /* LocationAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAnnotation.swift; sourceTree = "<group>"; };
+		5DA146A924A74E5D0046206E /* Animators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animators.swift; sourceTree = "<group>"; };
+		5DA146AC24AA56D30046206E /* appExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appExtensions.swift; sourceTree = "<group>"; };
+		5DCE0C52248B8B580092F841 /* NasaPostCardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaPostCardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DCE0C55248B8B590092F841 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5DCE0C57248B8B590092F841 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5DCE0C59248B8B590092F841 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5DCE0C5C248B8B590092F841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5DCE0C5E248B8B5A0092F841 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DCE0C61248B8B5A0092F841 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5DCE0C63248B8B5A0092F841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DCE0C68248B8B5A0092F841 /* NasaPostCardAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NasaPostCardAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DCE0C6C248B8B5A0092F841 /* NasaPostCardAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaPostCardAppTests.swift; sourceTree = "<group>"; };
+		5DCE0C6E248B8B5A0092F841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DCE0C77248B8B940092F841 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DCE0C4F248B8B580092F841 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DCE0C65248B8B5A0092F841 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D9E7C8624AB488600BEE7BE /* Contollers */ = {
+			isa = PBXGroup;
+			children = (
+				5DCE0C59248B8B590092F841 /* ViewController.swift */,
+				5D96A5AD249BDE8C0051F8C3 /* PostCodeDetialViewController.swift */,
+				5DA07F4E249FCA3E00E9A82A /* LocationSatalliteDetailViewController.swift */,
+				5DA07F50249FCE1D00E9A82A /* LocationresultViewController.swift */,
+				5DA07F4C249FC9CC00E9A82A /* LocationSelectorViewController.swift */,
+				5D96A5AB249BDCDB0051F8C3 /* PostcardCreatorCollectionViewController.swift */,
+			);
+			path = Contollers;
+			sourceTree = "<group>";
+		};
+		5D9E7C8724AB489C00BEE7BE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5DA07F56249FEAD700E9A82A /* LocationAnnotation.swift */,
+				5D96A5BB249D24DC0051F8C3 /* PostcardCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5D9E7C8824AB493D00BEE7BE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5D96A5B5249CBA260051F8C3 /* MarsRoverPhoto.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5D9E7C8924AB4A7700BEE7BE /* Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5DCE0C77248B8B940092F841 /* Credentials.swift */,
+				5DA07F54249FD73800E9A82A /* AddressFormatter.swift */,
+				5DA146A924A74E5D0046206E /* Animators.swift */,
+			);
+			path = "Helper Classes";
+			sourceTree = "<group>";
+		};
+		5D9E7C8A24AB4A9000BEE7BE /* Netowrking Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5D96A5B1249CB0880051F8C3 /* MarsPhotoJsonDownloder.swift */,
+				5D96A5B7249CC2E10051F8C3 /* PhotoDownloader.swift */,
+			);
+			path = "Netowrking Classes";
+			sourceTree = "<group>";
+		};
+		5D9E7C8B24AB4AD200BEE7BE /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				5D96A5B3249CB92F0051F8C3 /* Errors.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		5DA146AB24AA56C10046206E /* EXTENTIONS */ = {
+			isa = PBXGroup;
+			children = (
+				5DA146AC24AA56D30046206E /* appExtensions.swift */,
+			);
+			path = EXTENTIONS;
+			sourceTree = "<group>";
+		};
+		5DCE0C49248B8B580092F841 = {
+			isa = PBXGroup;
+			children = (
+				5DCE0C54248B8B580092F841 /* NasaPostCardApp */,
+				5DCE0C6B248B8B5A0092F841 /* NasaPostCardAppTests */,
+				5DCE0C53248B8B580092F841 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5DCE0C53248B8B580092F841 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DCE0C52248B8B580092F841 /* NasaPostCardApp.app */,
+				5DCE0C68248B8B5A0092F841 /* NasaPostCardAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DCE0C54248B8B580092F841 /* NasaPostCardApp */ = {
+			isa = PBXGroup;
+			children = (
+				5D9E7C8B24AB4AD200BEE7BE /* Errors */,
+				5D9E7C8A24AB4A9000BEE7BE /* Netowrking Classes */,
+				5D9E7C8924AB4A7700BEE7BE /* Helper Classes */,
+				5D9E7C8824AB493D00BEE7BE /* Models */,
+				5D9E7C8724AB489C00BEE7BE /* Views */,
+				5D9E7C8624AB488600BEE7BE /* Contollers */,
+				5DA146AB24AA56C10046206E /* EXTENTIONS */,
+				5DCE0C55248B8B590092F841 /* AppDelegate.swift */,
+				5DCE0C57248B8B590092F841 /* SceneDelegate.swift */,
+				5DCE0C5B248B8B590092F841 /* Main.storyboard */,
+				5DCE0C5E248B8B5A0092F841 /* Assets.xcassets */,
+				5DCE0C60248B8B5A0092F841 /* LaunchScreen.storyboard */,
+				5DCE0C63248B8B5A0092F841 /* Info.plist */,
+			);
+			path = NasaPostCardApp;
+			sourceTree = "<group>";
+		};
+		5DCE0C6B248B8B5A0092F841 /* NasaPostCardAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				5DCE0C6C248B8B5A0092F841 /* NasaPostCardAppTests.swift */,
+				5DCE0C6E248B8B5A0092F841 /* Info.plist */,
+			);
+			path = NasaPostCardAppTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DCE0C51248B8B580092F841 /* NasaPostCardApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DCE0C71248B8B5A0092F841 /* Build configuration list for PBXNativeTarget "NasaPostCardApp" */;
+			buildPhases = (
+				5DCE0C4E248B8B580092F841 /* Sources */,
+				5DCE0C4F248B8B580092F841 /* Frameworks */,
+				5DCE0C50248B8B580092F841 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NasaPostCardApp;
+			productName = NasaPostCardApp;
+			productReference = 5DCE0C52248B8B580092F841 /* NasaPostCardApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5DCE0C67248B8B5A0092F841 /* NasaPostCardAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DCE0C74248B8B5A0092F841 /* Build configuration list for PBXNativeTarget "NasaPostCardAppTests" */;
+			buildPhases = (
+				5DCE0C64248B8B5A0092F841 /* Sources */,
+				5DCE0C65248B8B5A0092F841 /* Frameworks */,
+				5DCE0C66248B8B5A0092F841 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DCE0C6A248B8B5A0092F841 /* PBXTargetDependency */,
+			);
+			name = NasaPostCardAppTests;
+			productName = NasaPostCardAppTests;
+			productReference = 5DCE0C68248B8B5A0092F841 /* NasaPostCardAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DCE0C4A248B8B580092F841 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = CurtisScott;
+				TargetAttributes = {
+					5DCE0C51248B8B580092F841 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					5DCE0C67248B8B5A0092F841 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 5DCE0C51248B8B580092F841;
+					};
+				};
+			};
+			buildConfigurationList = 5DCE0C4D248B8B580092F841 /* Build configuration list for PBXProject "NasaPostCardApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DCE0C49248B8B580092F841;
+			productRefGroup = 5DCE0C53248B8B580092F841 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DCE0C51248B8B580092F841 /* NasaPostCardApp */,
+				5DCE0C67248B8B5A0092F841 /* NasaPostCardAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DCE0C50248B8B580092F841 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DCE0C62248B8B5A0092F841 /* LaunchScreen.storyboard in Resources */,
+				5DCE0C5F248B8B5A0092F841 /* Assets.xcassets in Resources */,
+				5DCE0C5D248B8B590092F841 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DCE0C66248B8B5A0092F841 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DCE0C4E248B8B580092F841 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DA07F57249FEAD700E9A82A /* LocationAnnotation.swift in Sources */,
+				5DCE0C5A248B8B590092F841 /* ViewController.swift in Sources */,
+				5D96A5B8249CC2E10051F8C3 /* PhotoDownloader.swift in Sources */,
+				5DCE0C56248B8B590092F841 /* AppDelegate.swift in Sources */,
+				5DCE0C78248B8B940092F841 /* Credentials.swift in Sources */,
+				5DA07F4F249FCA3E00E9A82A /* LocationSatalliteDetailViewController.swift in Sources */,
+				5DA07F51249FCE1D00E9A82A /* LocationresultViewController.swift in Sources */,
+				5D96A5AE249BDE8C0051F8C3 /* PostCodeDetialViewController.swift in Sources */,
+				5DCE0C58248B8B590092F841 /* SceneDelegate.swift in Sources */,
+				5DA146AA24A74E5D0046206E /* Animators.swift in Sources */,
+				5D96A5B4249CB92F0051F8C3 /* Errors.swift in Sources */,
+				5DA07F55249FD73800E9A82A /* AddressFormatter.swift in Sources */,
+				5DA07F4D249FC9CC00E9A82A /* LocationSelectorViewController.swift in Sources */,
+				5D96A5B6249CBA260051F8C3 /* MarsRoverPhoto.swift in Sources */,
+				5DA146AD24AA56D30046206E /* appExtensions.swift in Sources */,
+				5D96A5BC249D24DC0051F8C3 /* PostcardCollectionViewCell.swift in Sources */,
+				5D96A5B2249CB0880051F8C3 /* MarsPhotoJsonDownloder.swift in Sources */,
+				5D96A5AC249BDCDB0051F8C3 /* PostcardCreatorCollectionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DCE0C64248B8B5A0092F841 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DCE0C6D248B8B5A0092F841 /* NasaPostCardAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5DCE0C6A248B8B5A0092F841 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DCE0C51248B8B580092F841 /* NasaPostCardApp */;
+			targetProxy = 5DCE0C69248B8B5A0092F841 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5DCE0C5B248B8B590092F841 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DCE0C5C248B8B590092F841 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5DCE0C60248B8B5A0092F841 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DCE0C61248B8B5A0092F841 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5DCE0C6F248B8B5A0092F841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5DCE0C70248B8B5A0092F841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DCE0C72248B8B5A0092F841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KG7A9SR4C;
+				INFOPLIST_FILE = NasaPostCardApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.curtisscott.NasaPostCardApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DCE0C73248B8B5A0092F841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KG7A9SR4C;
+				INFOPLIST_FILE = NasaPostCardApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.curtisscott.NasaPostCardApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5DCE0C75248B8B5A0092F841 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KG7A9SR4C;
+				INFOPLIST_FILE = NasaPostCardAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.curtisscott.NasaPostCardAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NasaPostCardApp.app/NasaPostCardApp";
+			};
+			name = Debug;
+		};
+		5DCE0C76248B8B5A0092F841 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KG7A9SR4C;
+				INFOPLIST_FILE = NasaPostCardAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.curtisscott.NasaPostCardAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NasaPostCardApp.app/NasaPostCardApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DCE0C4D248B8B580092F841 /* Build configuration list for PBXProject "NasaPostCardApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DCE0C6F248B8B5A0092F841 /* Debug */,
+				5DCE0C70248B8B5A0092F841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DCE0C71248B8B5A0092F841 /* Build configuration list for PBXNativeTarget "NasaPostCardApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DCE0C72248B8B5A0092F841 /* Debug */,
+				5DCE0C73248B8B5A0092F841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DCE0C74248B8B5A0092F841 /* Build configuration list for PBXNativeTarget "NasaPostCardAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DCE0C75248B8B5A0092F841 /* Debug */,
+				5DCE0C76248B8B5A0092F841 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5DCE0C4A248B8B580092F841 /* Project object */;
+}
