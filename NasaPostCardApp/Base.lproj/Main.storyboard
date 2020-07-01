@@ -334,13 +334,13 @@
                     </view>
                     <connections>
                         <outlet property="feedbackLabel" destination="uAb-Ls-WjS" id="gxp-u7-dvZ"/>
+                        <outlet property="imageView" destination="kcX-dz-WjH" id="O2F-kJ-dHK"/>
                         <outlet property="imageViewBottomConstraint" destination="Hg3-X1-xgo" id="j38-hb-7US"/>
                         <outlet property="imageViewLeadingConstraint" destination="yAa-7E-JDn" id="Aa9-VZ-9A2"/>
                         <outlet property="imageViewTopConstraint" destination="eVI-1e-2M0" id="RrD-Vo-aho"/>
                         <outlet property="imageViewTrailingConstraint" destination="Ce0-am-oET" id="PGl-TG-l7M"/>
                         <outlet property="loadingMonitor" destination="ue1-ED-AP8" id="B8c-4w-oFu"/>
-                        <outlet property="satImage" destination="kcX-dz-WjH" id="O2F-kJ-dHK"/>
-                        <outlet property="testScroll" destination="oFH-nr-DRP" id="pJa-XL-zct"/>
+                        <outlet property="scrollView" destination="oFH-nr-DRP" id="pJa-XL-zct"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zKD-lI-ggN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

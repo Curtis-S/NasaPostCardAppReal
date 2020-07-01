@@ -244,17 +244,17 @@ class NasaPostCardAppTests3: XCTestCase {
     func testLoad(){
         
         loadView()
-        XCTAssertNotNil(testObject.satImage)
-        XCTAssertNotNil(testObject.testScroll.delegate)
+        XCTAssertNotNil(testObject.imageView)
+        XCTAssertNotNil(testObject.scrollView.delegate)
     
     }
     
     func testScrollSettings(){
         
         loadView()
-        print(" this is the resjhdsfbhjdsgfhabdhfashjdfasdjhfhjs,adbfhjsdbfhjsbdfjsdfhjbdsfhbadsmbfhadsbfhbdshbfhsdbfhbdasfbsdabfhasbfult\(testObject.testScroll.minimumZoomScale)")
-        XCTAssertEqual(testObject.testScroll.minimumZoomScale , 1.0)
-        XCTAssertNotNil(testObject.testScroll.delegate)
+        print(" this is the resjhdsfbhjdsgfhabdhfashjdfasdjhfhjs,adbfhjsdbfhjsbdfjsdfhjbdsfhbadsmbfhadsbfhbdshbfhsdbfhbdasfbsdabfhasbfult\(testObject.scrollView.minimumZoomScale)")
+        XCTAssertEqual(testObject.scrollView.minimumZoomScale , 1.0)
+        XCTAssertNotNil(testObject.scrollView.delegate)
     
     }
 

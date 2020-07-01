@@ -14,8 +14,8 @@ class LocationSatalliteDetailViewController: UIViewController, UIScrollViewDeleg
     @IBOutlet weak var imageViewLeadingConstraint: NSLayoutConstraint!
     @IBOutlet weak var imageViewTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var imageViewTrailingConstraint: NSLayoutConstraint!
-    @IBOutlet weak var testScroll: UIScrollView!
-    @IBOutlet weak var satImage: UIImageView!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var imageView: UIImageView!
     let dl = PhotoDownloader()
  
     @IBOutlet weak var loadingMonitor: UIActivityIndicatorView!
@@ -34,11 +34,11 @@ class LocationSatalliteDetailViewController: UIViewController, UIScrollViewDeleg
     let backgroundImage = UIImage(named: "Geely_Sat")
     override func viewDidLoad() {
         super.viewDidLoad()
-        testScroll.delegate = self
+        scrollView.delegate = self
         setBackGround(imgView: bgImage, img: backgroundImage!)
         feedbackLabel.text =  "this is the recent saltellite image for the  \(place!.title!) area  "
-        self.testScroll.layer.borderWidth = 3
-        self.testScroll.layer.borderColor = UIColor.blue.cgColor
+        self.scrollView.layer.borderWidth = 3
+        self.scrollView.layer.borderColor = UIColor.blue.cgColor
         
        
 
@@ -47,7 +47,7 @@ class LocationSatalliteDetailViewController: UIViewController, UIScrollViewDeleg
         dl.loadImage(from: apiPath) { image ,_ in
             if let image = image {
                 DispatchQueue.main.async {
-                    self.satImage.image = image
+                    self.imageView.image = image
                     print("changed pic ")
                     self.loadingMonitor.stopAnimating()
                 }
@@ -58,23 +58,44 @@ class LocationSatalliteDetailViewController: UIViewController, UIScrollViewDeleg
     }
     override func viewWillLayoutSubviews() {
       super.viewWillLayoutSubviews()
-      updateMinZoomScaleForSize(view.bounds.size)
-    }
-    func updateMinZoomScaleForSize(_ size: CGSize) {
-      let widthScale = size.width / satImage.bounds.width
-      let heightScale = size.height / satImage.bounds.height
-      let minScale = min(widthScale, heightScale)
-        
-    testScroll.minimumZoomScale = 0.1
-      testScroll.zoomScale = 1
+        updateMinZoomScaleForSize(scrollView.bounds.size)
     }
     
-    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
-        return self.satImage
-    }
-    func scrollViewDidEndZooming(_ scrollView: UIScrollView, with view: UIView?, atScale scale: CGFloat) {
+ 
+    func updateMinZoomScaleForSize(_ size: CGSize) {
+      let widthScale = size.width / imageView.bounds.width
+      let heightScale = size.height / imageView.bounds.height
+      let minScale = min(widthScale, heightScale)
         
+        scrollView.minimumZoomScale = 0.5
+        scrollView.maximumZoomScale = 2
+    scrollView.zoomScale = 1
     }
+   
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return self.imageView
+    }
+    func scrollViewDidZoom(_ scrollView: UIScrollView) {
+        if scrollView.zoomScale > 1 {
+            if let image = imageView.image {
 
+                let ratioW = imageView.frame.width / image.size.width
+                let ratioH = imageView.frame.height / image.size.height
+
+                let ratio = ratioW < ratioH ? ratioW : ratioH
+
+                let newWidth = image.size.width * ratio
+                let newHeight = image.size.height * ratio
+
+                let left = 0.5 * (newWidth * scrollView.zoomScale > imageView.frame.width ? (newWidth - imageView.frame.width) : (scrollView.frame.width - scrollView.contentSize.width))
+                let top = 0.5 * (newHeight * scrollView.zoomScale > imageView.frame.height ? (newHeight - imageView.frame.height) : (scrollView.frame.height - scrollView.contentSize.height))
+
+                scrollView.contentInset = UIEdgeInsets(top: top, left: left, bottom: top, right: left)
+            }
+        } else {
+            scrollView.contentInset = UIEdgeInsets.zero
+        }
+    }
+    
 
 }
