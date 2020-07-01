@@ -15,7 +15,8 @@ class PostCodeDetialViewController: UIViewController {
     @IBOutlet weak var fromMessage: UITextField!
     
     @IBOutlet weak var sendPostCardButton: UIButton!
-    @IBOutlet weak var sendEmailButton: UIButton!
+ 
+    @IBOutlet weak var genPostCardButton: UIButton!
     @IBOutlet weak var toMessage: UITextField!
     @IBOutlet weak var textMessage: UITextView!
     @IBOutlet weak var displayPicture: UIImageView!
@@ -23,6 +24,8 @@ class PostCodeDetialViewController: UIViewController {
     let backgroundImage = UIImage(named: "pia23492")
     override func viewDidLoad() {
         super.viewDidLoad()
+        sendPostCardButton.roundButton()
+        genPostCardButton.roundButton()
         textMessage.layer.cornerRadius = 5
         // Do any additional setup after loading the view.
         setBackGround(imgView: bgImage, img: backgroundImage!)

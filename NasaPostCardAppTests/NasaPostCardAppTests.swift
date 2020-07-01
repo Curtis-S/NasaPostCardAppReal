@@ -47,7 +47,7 @@ class NasaPostCardAppTests: XCTestCase {
     func testRoundButtons(){
         var but = UIButton(type: .close)
         but.roundButton()
-        XCTAssertEqual(but.layer.borderWidth, 1)
+        XCTAssertEqual(but.layer.cornerRadius, 4)
     }
     
     func testfadePic(){
@@ -315,5 +315,53 @@ class NasaPostCardAppTests4: XCTestCase {
         XCTAssertNotNil(testObject)
     
     }
+
+}
+
+
+class NasaPostCardAppTests7: XCTestCase {
+    var testObject:  LocationResultsController!
+    var window :UIWindow!
+    
+    
+    func loadView(){
+        window.addSubview(testObject.view)
+        RunLoop.current.run(until: Date())
+    }
+    override func setUpWithError() throws {
+        // Put setup code here. This method is called before the invocation of each test method in the class.
+        super.setUp()
+        window = UIWindow()
+        testObject = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "test") as? LocationResultsController
+       
+       
+    }
+
+    override func tearDownWithError() throws {
+        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        
+        window = nil
+        super.tearDown()
+    }
+
+    func testExample() throws {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+
+    func testPerformanceExample() throws {
+        // This is an example of a performance test case.
+        self.measure {
+            // Put the code you want to measure the time of here.
+        }
+    }
+    
+    func testdidLoad(){
+        loadView()
+        XCTAssertNotNil(testObject.tableView
+)     }
+    
+    
+    
 
 }

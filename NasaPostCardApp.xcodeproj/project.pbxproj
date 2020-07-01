@@ -17,7 +17,6 @@
 		5DA07F4D249FC9CC00E9A82A /* LocationSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA07F4C249FC9CC00E9A82A /* LocationSelectorViewController.swift */; };
 		5DA07F4F249FCA3E00E9A82A /* LocationSatalliteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA07F4E249FCA3E00E9A82A /* LocationSatalliteDetailViewController.swift */; };
 		5DA07F51249FCE1D00E9A82A /* LocationresultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA07F50249FCE1D00E9A82A /* LocationresultViewController.swift */; };
-		5DA07F55249FD73800E9A82A /* AddressFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA07F54249FD73800E9A82A /* AddressFormatter.swift */; };
 		5DA07F57249FEAD700E9A82A /* LocationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA07F56249FEAD700E9A82A /* LocationAnnotation.swift */; };
 		5DA146AA24A74E5D0046206E /* Animators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA146A924A74E5D0046206E /* Animators.swift */; };
 		5DA146AD24AA56D30046206E /* appExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA146AC24AA56D30046206E /* appExtensions.swift */; };
@@ -52,7 +51,6 @@
 		5DA07F4C249FC9CC00E9A82A /* LocationSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectorViewController.swift; sourceTree = "<group>"; };
 		5DA07F4E249FCA3E00E9A82A /* LocationSatalliteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSatalliteDetailViewController.swift; sourceTree = "<group>"; };
 		5DA07F50249FCE1D00E9A82A /* LocationresultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationresultViewController.swift; sourceTree = "<group>"; };
-		5DA07F54249FD73800E9A82A /* AddressFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressFormatter.swift; sourceTree = "<group>"; };
 		5DA07F56249FEAD700E9A82A /* LocationAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAnnotation.swift; sourceTree = "<group>"; };
 		5DA146A924A74E5D0046206E /* Animators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animators.swift; sourceTree = "<group>"; };
 		5DA146AC24AA56D30046206E /* appExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appExtensions.swift; sourceTree = "<group>"; };
@@ -122,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				5DCE0C77248B8B940092F841 /* Credentials.swift */,
-				5DA07F54249FD73800E9A82A /* AddressFormatter.swift */,
 				5DA146A924A74E5D0046206E /* Animators.swift */,
 			);
 			path = "Helper Classes";
@@ -312,7 +309,6 @@
 				5DCE0C58248B8B590092F841 /* SceneDelegate.swift in Sources */,
 				5DA146AA24A74E5D0046206E /* Animators.swift in Sources */,
 				5D96A5B4249CB92F0051F8C3 /* Errors.swift in Sources */,
-				5DA07F55249FD73800E9A82A /* AddressFormatter.swift in Sources */,
 				5DA07F4D249FC9CC00E9A82A /* LocationSelectorViewController.swift in Sources */,
 				5D96A5B6249CBA260051F8C3 /* MarsRoverPhoto.swift in Sources */,
 				5DA146AD24AA56D30046206E /* appExtensions.swift in Sources */,

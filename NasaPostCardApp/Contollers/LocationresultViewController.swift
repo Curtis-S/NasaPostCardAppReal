@@ -45,7 +45,7 @@ class LocationResultsController: UITableViewController {
         let selectedItem = matchingItems[indexPath.row].placemark
         cell.textLabel?.text = selectedItem.name
    
-        cell.detailTextLabel?.text = AddressFormatter.parseAddress(selectedItem: selectedItem)
+      //cell.detailTextLabel?.text = AddressFormatter.parseAddress(selectedItem: selectedItem)
         
         return cell
     }
