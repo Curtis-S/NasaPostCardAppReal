@@ -126,16 +126,16 @@
       "size" : "50x50"
     },
     {
-      "filename" : "Icon-Small-50@2x.png",
+      "filename" : "Icon-60.png",
       "idiom" : "universal",
       "scale" : "2x",
       "size" : "50x50"
     },
     {
-      "filename" : "Icon-60.png",
+      "filename" : "Icon-Small-50@2x.png",
       "idiom" : "universal",
-      "scale" : "1x",
-      "size" : "60x60"
+      "scale" : "2x",
+      "size" : "50x50"
     },
     {
       "filename" : "Icon-72.png",

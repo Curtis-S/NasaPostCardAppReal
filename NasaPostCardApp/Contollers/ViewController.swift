@@ -31,7 +31,7 @@ class ViewController: UIViewController {
      setup()
        let time = Timer.scheduledTimer(withTimeInterval: 3.0, repeats: true) { _ in
         Animator.fadePicture2(imgView: self.backGroundImage, image1: self.marsPic!, image2: self.spacePic!)
-            print("hello")
+           // print("hello")
         }
    
        

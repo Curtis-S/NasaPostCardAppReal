@@ -18,30 +18,39 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Geely_Sat" translatesAutoresizingMaskIntoConstraints="NO" id="4RD-1Y-Ljy">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ZMr-a5-LMD">
-                                <rect key="frame" x="41" y="637" width="137" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Mars Rover Postcard Creator "/>
-                                <connections>
-                                    <segue destination="nUp-4Z-gJf" kind="show" identifier="postCard" id="0Jv-z3-MQQ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ccM-Ak-KIJ">
-                                <rect key="frame" x="246" y="637" width="137" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Location sattelite view"/>
-                                <connections>
-                                    <segue destination="iMk-fm-5Wq" kind="show" id="590-B6-kMG"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="center" distribution="fillEqually" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="xUe-be-IbX">
+                                <rect key="frame" x="10" y="681" width="394" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ZMr-a5-LMD">
+                                        <rect key="frame" x="0.0" y="0.0" width="168.5" height="70"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Mars Rover Postcard Creator "/>
+                                        <connections>
+                                            <segue destination="nUp-4Z-gJf" kind="show" identifier="postCard" id="0Jv-z3-MQQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ccM-Ak-KIJ">
+                                        <rect key="frame" x="225.5" y="0.0" width="168.5" height="70"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Location sattelite view"/>
+                                        <connections>
+                                            <segue destination="iMk-fm-5Wq" kind="show" id="590-B6-kMG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="0rJ-7I-3KZ"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="xUe-be-IbX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="9Qw-0B-sy9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xUe-be-IbX" secondAttribute="bottom" constant="111" id="Auf-kC-l0k"/>
                             <constraint firstAttribute="trailing" secondItem="4RD-1Y-Ljy" secondAttribute="trailing" id="Dh6-uu-qXR"/>
                             <constraint firstItem="4RD-1Y-Ljy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="F2o-oB-BIV"/>
                             <constraint firstItem="4RD-1Y-Ljy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Nsp-U7-djW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xUe-be-IbX" secondAttribute="trailing" constant="10" id="TSq-da-7MY"/>
                             <constraint firstItem="4RD-1Y-Ljy" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="Tlx-rf-pSe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
